@@ -1,0 +1,208 @@
+.candado-MainContainer a:link, .candado-MainContainer a:link, .candado-MainContainer a:visited, .candado-MainContainer a:focus {
+	border: 0;
+	border-bottom: none;
+	border-width: 0;
+	text-decoration: none;
+}
+/* Contenedor */
+.candado-MainContainer {
+	font-size: 1em;
+	margin: 1em auto;
+	max-width: 750px;
+	padding: 0;
+	width: 100%;
+}
+.candado-MainContainer * {
+	box-sizing: border-box;
+}
+.candado-MainContainer p {
+	margin: 0;
+	padding: 0;
+}
+.candado-MainContainer p:empty{display:none}
+/* Instrucciones y feedback */
+.candado-instructions,.candado-retro {
+	margin: 0 auto;
+	width: 100%;
+}
+.candado-instructions p,.candado-retro p {
+	font-size: 1em;
+	margin:1em 0
+}
+/* Minimizado */
+.candado-LinkMaximize {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.candado-GameMinimize {
+	display: none;
+	margin: 0.3em auto;
+}
+.candado-IconMinimize {
+	height: 2em;
+	margin-right: 0.3em;
+	width: 2em;
+}
+
+/* Barra superior */
+.candado-GameScoreBoard {
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+.candado-MainContainer .exeQuextIcons34-Time {
+	background-image: url(exequexttime.png);
+	background-size: 100% 100%;
+	height: 1.5em;
+	width: 1.5em;
+}
+.candado-PTime {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: auto 0.3em;
+	min-width: 3.5em;
+	text-align: center;
+}
+.candado-LinkMinimize{
+    margin-left:.5em
+}
+.candado-MainContainer  .exeQuextIcons34-Minimize {
+	background-image: url(exequextmin.png);
+	background-size: 100% 100%;
+    height: 1.5em;
+	width: 1.5em;
+}
+/* Intruciones reto */
+.candado-Instructiones, .candado-FeedRetro {
+	margin: 0 auto;
+	max-height: 2000px;
+	min-height: 100px;
+	overflow: hidden;
+	padding: 0.4em;
+	width: 98%;
+	z-index: 1;
+}
+.candado-FeedRetro {
+	display: none;
+}
+/* Solucion */
+.candado-SolutionDiv {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin: 1em auto 0 auto;
+	width: 100%;
+}
+
+.candado-SolutionDiv label{
+    font-weight:bold
+}
+
+.candado-SolutionDiv a {
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.candado-SolutionDiv input.feedbackbutton{
+    margin:0 .5em
+}
+
+.candado-SolutionDiv .exeQuextIcons-Submit {
+	background-image: url(exequextreply.png);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.candado-Solution {
+	margin: 0 .3em;
+	max-width: 300px;
+	width: 60%;
+	padding: 0.4em 0.25em;
+	text-align: center;
+}
+
+/* Mensaje informativo */
+.candado-MessageInfo {
+	margin: 1em auto;
+	width: 100%;
+}
+.candado-MessageInfo p {
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+}
+/* botones desafio */
+.candado-ShowIntro {
+	margin-right: 0.7em;
+}
+
+.candado-Activo {
+	-webkit-filter: drop-shadow(.12em .12em .12em rgba(0, 0, 0, 0.5));
+	filter: drop-shadow(.12em .12em .12em rgba(0, 0, 0, 0.5));
+	cursor: pointer;
+	-moz-transition: transform 0.3s;
+	-ms-transition: transform 0.3s;
+	-o-transition: transform 0.3s;
+	-webkit-transition: transform 0.3s;
+	transition: transform 0.3s;
+    margin-right:.5em
+}
+
+.candado-LinkMaximize:hover .candado-Activo{
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+@media screen and (max-width: 800px) {
+	.candado-GameContainer {
+		font-size: 0.9rem;
+	}
+	.candado-GameContainer input[type="text"] {
+		background: #fdfdfd;
+		border: 1px solid #828282;
+		border-radius: 4px;
+		box-sizing: border-box;
+		display: inline-block;
+		font-size: 0.9em;
+		line-height: 1.1em;
+		padding: 3px 2px;
+	}
+	.candado-GameContainer input[type="text"]:active, .candado-GameContainer input[type="text"]:focus {
+		background: #fdfdfd;
+		border: 1px solid #398ee7;
+		border-radius: 4px;
+	}
+}
+@media screen and (max-width:550px) {
+	.candado-SolutionDiv label {
+		display: none;
+	}
+	.candado-GameContainer {
+		font-size: 0.8rem;
+	}
+	.candado-instructions p,.candado-retro p {
+		font-size: 0.8em;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width:450px) {
+	.candado-GameContainer {
+		font-size: 0.8rem;
+	}
+}
+@media screen and (max-width:300px) {
+	.candado-GameContainer {
+		font-size: 0.7rem;
+	}
+}
+@media screen and (max-width:250px) {
+	.candado-GameContainer {
+		font-size: 0.6rem;
+	}
+}
